@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main_container">
+        <h2>CURRENT TIME</h2>
+        <!-- clock to show current time -->
+        <div class="current_time height flex">
+            <div id="clock" class="flex">
+                <h2 id="time"></h2>
+            </div>
+        </div>
+        <h2>SET ALARM TIME</h2>
+        <!-- take input from user for alarm time -->
+        <div id="time_selector" class="height flex" style="justify-content: center;">
+            <select id="hour_selector"></select>
+            <h2>:</h2>
+            <select id="minute_selector"></select>
+            <h2>:</h2>
+            <select id="second_selector"></select>
+            <select id="am_pm_selector">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <!-- set alarm button -->
+        <div class="button_container height flex">
+            <button class="custom_button" id="set_alarm"><i class="fa fa-clock-o"></i>SET ALARM</button>
+        </div>
+        <!-- display list of alarms -->
+        <div id="alarm_display" class="flex height">
+            <ul id="alarm_info">            
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
